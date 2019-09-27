@@ -2,41 +2,63 @@ body{
 	font-family: arial,sans-serif;
 	margin: 0;
 	padding: 0;
-	background-color: #f2f2f2;
+	background-color: #E5DDD5;
 
 }
+* {
+	box-sizing: border-box;
+}
+
+
+@media only screen and (max-width:520px){
+	#chat-box{
+		width: 100% !important;
+	}
+}
+@media only screen and (min-width:560px) {
+	#send{
+		width: 70px !important;
+	}
+}
+
+
 #header{
 	width:100%;
-	height: 60px;
-	background-color: #44B1A6;
-	box-shadow: 0px 4px 2px #44B1A6;
+	height: 10vh;
+	background-color: #32465A;
+	box-shadow: 0px 4px 2px #32465A;
 	color: white;
+	position: fixed;
+	top: 0;
 }
-#header>#chat-button{
+#chat-button{
 	float: right;
 	padding: 5px;
 	cursor: pointer;
+	
 }
+/* #chat-button::after {
+	clear: both;
+} */
 #chat-box{
-	position : fixed;
-	right : 0px;
-	top: 0px;
-	width : 1370px;
-  margin: 0;
-  overflow-y:auto;
+	/* position : fixed; */
+	width : 100%;
+	overflow-y:auto;
 	/*border: solid 1px red;*/
 }
 #chat-box>#chat-head{
 	height: 58px;
-	width: inherit;
-	font-size: 150%;
+	width: 100%;
+	font-size: 50px;
 	font-weight: bold;
-	padding: 10px 0 10px 5px;
-	background-color: #44B1A6;
+	padding: 10px 0 30px 5px;
+	background-color: #32465A;
 	color: white;
 	z-index: 99;
-	box-shadow: 0px 4px 2px #44B1A6;
+	box-shadow: 0px 10px 2px #32465A;
 	margin-bottom: 10px;
+	margin-top: 10vh;
+	/* display: flex; */
 }
 #chat-box>#chat-head>i{
 	float: right;
@@ -44,53 +66,124 @@ body{
 	padding:8px 15px 10px 0;
 	cursor: pointer;
 }
-#chat-box>#converse{
-	height: 85%;
-	background-color: white;
-	padding-left: 5px;
-	font-size: 115%
+/* textarea, button {
+	position: fixed;
+	bottom: 0;
+} */
+#chat-user {
+	float:right;
 }
-#chat-box>#controls{
+/* #chat-user::after {
+	clear: both;
+} */
+.current-msg::after {
+	content: " ";
+	clear: both;
+	display: table;
+}
+#chat-box>#converse{
+	height: 68vh;
+	width: 100%;
+	background: url(./whatsapp-bg.jpg);
+	padding: 10px 20px;
+	font-size: 20px;
+	overflow-y: auto;
+	border-radius: 15px;
+}
+div.clear {
+	clear: both;
+}
+/* #controls{
+	position: fixed;
+	bottom: 0;
 	margin: 0;
 	border-top: 1px solid #AAA;
-	height: 8%;
-	width: 298px;
+	height: 1vh;
+	width: 100%;
 	background-color: white;
 	padding: 10px 0 10px 0;
-}
-#chat-box>#controls>#textbox{
-	width: 83%;
+} */
+#textbox{
+	/* width: 83%;
 	font-size: 115%;
 	height: inherit;
 	min-height: 48px;
 	max-height: 48px;
 	border: none;
-	padding: 10px;
+	padding: 10px; */
+	
+    border: 2px solid #dedede;
+    background-color: #fff;
+    border-radius: 3px;
+    padding: 0px 5px 0 5px;
+    margin: 5px;
+    width: 80%;
+    height: 55px;
+    background-image: url("../img/faceicon.png");
+    background-repeat: no-repeat;
+    background-position: 0;
+    background-size: 50px;
 
 }
 #chat-user{
-	color: #0055FF;
+	/* color: #0055FF; */
 	font-weight: bold;
 	font-size: 90%;
+    border: #cccccc 3px solid;
+	text-align: right;
+	float: right;
+	background-color:#dddddd;
+	padding:5px;
+	border-radius:5px;
+	display:inline-block;
 }
 #chat-bot{
-	color: #44B1A6;
+	color: #32465A;
 	font-weight: bold;
 	font-size: 90%;	
 }
 
+#chat-bot {
+	position: relative;
+}
+#bot-arrow {
+	border-top:19px solid #f1f1f1;
+	border-right:10px solid transparent;
+	border-bottom:19px solid transparent;
+	border-left:10px solid transparent;
+	position:absolute;
+	transform: rotate(110deg);
+	left: -29px;
+	bottom: 3px;
+}
+#chat-user {
+	position: relative;
+}
+#user-arrow {
+	border-top:19px solid #dddddd;
+	border-right:10px solid transparent;
+	border-bottom:19px solid transparent;
+	border-left:10px solid transparent;
+	position:absolute;
+	transform: rotate(-70deg);
+	right: -22px;
+    bottom: -12px;
+}
 textarea{
 	resize:none;
 	overflow-y: auto;
 }
-#chat-box>#controls>#send{
-	background-color: #44B1A6;
+#send{
 	border: none;
-	height :56px;
 	width: 12%;
-	border-radius: 50%;
+	height: 57px;
+	padding: 0;
+	cursor: pointer;
+	background: #32465a;
+	color: #f5f5f5;
+    margin-left: 2%;
 }
-#chat-box>#controls>#send:focus{
+#send:focus{
 	outline: none;
 }
 .controls-elements{
@@ -99,7 +192,7 @@ textarea{
 #send-icon{
 	color: white;
 }
-@media all and (max-height: 768px){
+/* @media all and (max-height: 768px){
 	#chat-box>#converse{
 		height: 79%;
 		background-color: white;
@@ -120,7 +213,8 @@ textarea{
 		height: 78%;
 		background-color: white;
 		padding-left: 5px;
-		font-size: 115%
+		font-size: 115%;
+		overflow-y: auto;
 	}
 	#chat-box>#controls{
 		margin: 0;
@@ -146,4 +240,4 @@ textarea{
 		background-color: white;
 		padding: 10px 0 10px 0;
 	}
-}
+} */

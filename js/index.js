@@ -2,9 +2,9 @@
 var username = "";
 function send_message(conv,message){
 	if (conv.length > 4) {
-			conv = conv + "<br>";
+			conv = conv + "<br>"+"<div class='clear'></div>"+"<br>";
 	}
-	$("#converse").html(conv +"<span class = 'current-msg'>" + "<span id='chat-bot'>Ganymede Bot: </span>" + message + "</span>");
+	$("#converse").html(conv +"<span class='current-msg' style='border: 3px solid #dedede;background-color:#f1f1f1;padding:5px;border-radius:5px;display:inline-block;'>" + "<span id='chat-bot'>Ganymede Bot:"+"<span id='bot-arrow'></span>"+" </span>" + message + "</span>");
 	$(".current-msg").hide();
 	$(".current-msg").delay(500).fadeIn();
 	$(".current-msg").removeClass("current-msg");
@@ -39,9 +39,9 @@ $(function(){
 		if (usermsg != "") {
 			$("#textbox").val("");
 			if (conv.length > 4) {
-				conv = conv + "<br>";
+				conv = conv + "<br>"+"<div class='clear'></div>"+"<br>";
 			}
-			$("#converse").html(conv + "<span id='chat-user'>You: </span>" + usermsg);
+			$("#converse").html(conv +"<span style=''></span>"+ "<span id='chat-user'>You: "+"<span id='user-arrow'></span>"+ usermsg+"</span>");
 			$("#converse").scrollTop($("#converse").prop("scrollHeight"));
 			conv = $("#converse").html();
 			ai(conv,usermsg);
