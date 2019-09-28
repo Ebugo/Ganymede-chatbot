@@ -28,19 +28,39 @@
         Have you heard of that new band “1023 Megabytes”? They’re pretty good, but they don’t have a gig just yet.");
 	$responses['what is your name'] = "My name is Ganymede bot. Gany for short";
 	// echo "Hello world";
-	$responses['tell me about yourself'] = "I am a chatbot. I'm still learning a lot of things so please forgive me if I can't answer you in some cases.";
-	$responses['what is the time'] = "The time is " . date("h:i:sa");
-	$responses["i'm fine"] = "Good. I'm happy about that.";
-	$responses["fine"] = "Good. I'm happy about that.";
-	$responses["nice meeting you"] = "Cool. Same here.";
-	$responses["can you say a quote"] = $quote[$random];
-	$responses["can you say a joke"] = $joke[$random1];
-	$responses["who are you"] = "I am Ganymede Bot";
-	$responses["hi"] = "Hey";
-	$responses["what's up"] = "Hey";
-	$responses["hey"] = "Hey";
-	$responses["good morning"] = "How are you?";
-	$responses["good afternoon"] = "How are you?";
+	$responses['tell me about yourself '] = "I am a chatbot. I'm still learning a lot of things so please forgive me if I can't answer you in some cases.";
+	$responses['what is the time '] = "The time is " . date("h:i:sa");
+	$responses['what time is it '] = "The time is " . date("h:i:sa");
+	$responses["i'm fine "] = "Good. I'm happy about that.";
+	$responses["fine "] = "Good. I'm happy about that.";
+	$responses["yes Ok cool good "] = "Alright.";
+	$responses["nice meeting you "] = "Cool. Same here.";
+	$responses["can you say a quote "] = $quote[$random];
+	$responses["can you say a joke "] = $joke[$random1];
+	$responses["who are you "] = "I am Ganymede Bot designed by some fine folks in the HNG internship 6.0";
+	$responses["what is your name "] = "My name is Ganymede Bot";
+	$responses["how old are you "] = "I am today years old 🙂";
+	$responses["hi "] = "Hi, I'm the ganymede chatbot designed by some fine folks at the hng internship.";
+	$responses["what's up "] = "Hey";
+	$responses["who initiated hng "] = "Mark Essien";
+	$responses["who is mark essien "] = "Mark Essien, initiator of HNG program. I love him, I wouldn't have been born if it hadn't been for him and some really fine folks on the internship.<br>Those are my buddies 😘";
+	$responses["hey "] = "Hey, I'm the ganymede chatbot designed by some fine folks at the hng internship.";
+	$responses["good morning "] = "Hi, good morning. How are you?";
+	$responses["good afternoon "] = "Hi, good afternoon. How are you?";
+	$responses["good evening "] = "Hi, good evening. How are you?";
+	$responses["what is hng "] = "You mean what Mark Essien set up to help coders?<br>It is a 3 month internship program for really outstanding buddies 🙂. I'm grateful for it. ";
+	$responses["are you real "] = "Sure, I've never felt realler 😎 ";
+	$responses["where do you live "] = "I live in GitHub server";
+	$responses["how can you help me "] = "Well, I can keep you company. ☺️";
+	$responses["which languages do you speak "] = "Hmmm... This is a really tough question for me.<br>I was born with Html5, CSS3, JS, and PHP, but I grew up to speak only English! 😊";
+	$responses["how are you "] = "I'm good, you?";
+	$responses["are you doing ok "] = "Sure, you?";
+	$responses["are you sure "] = "I'm very sure";
+	$responses["is that your final answer "] = "Yes 🙂";
+	$responses["what are your hobbies "] = "I love meeting people 🙂.";
+	$responses["what do you look like "] = "Like a bot 🤖☺️";
+
+
 	$q = $_GET["q"];
 	$response = "";
 
@@ -57,7 +77,7 @@
 			
 		}
 	}
-	$noresponse = "Sorry I'm still learning. Rome wasn't built in a day. P.S: I can say jokes, quotes and time";
+	$noresponse = "C'mon buddy, You can't have a general conversation with me yet. I'm just one week old.<br>I can say jokes, quotes and time";
 	echo $response === "" ? $noresponse : $response;
 ?>
 
