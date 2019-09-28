@@ -17,7 +17,9 @@ function get_username(conv){
 function ai(conv,message){
 	if (username<4) {
 		username = message;
-		send_message(conv,"Hi, "+ username + ". How are you?");
+			if (message=='hi') {send_message(conv,"I'm good. You didn't tell me your name.");
+			} else {
+		send_message(conv,"Hi, "+ username + ". How are you?");} ;
 	}
 	else{
 		// $("#send").click(function(){
