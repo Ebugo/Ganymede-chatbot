@@ -31,6 +31,7 @@
 	$responses['tell me about yourself'] = "I am a chatbot. I'm still learning a lot of things so please forgive me if I can't answer you in some cases.";
 	$responses['what is the time'] = "The time is " . date("h:i:sa");
 	$responses["i'm fine"] = "Good. I'm happy about that.";
+	$responses["fine"] = "Good. I'm happy about that.";
 	$responses["can you say a quote"] = $quote[$random];
 	$responses["can you say a joke"] = $joke[$random1];
 	$responses["who are you"] = "I am Ganymede Bot";
