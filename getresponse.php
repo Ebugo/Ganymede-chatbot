@@ -38,9 +38,9 @@
 	$responses["who are you"] = "I am Ganymede Bot";
 	$responses["what is your name"] = "My name is Ganymede Bot";
 	$responses["how old are you "] = "I am today years old 🙂";
-	$responses["hi"] = "Hey";
+	$responses["hi"] = "Hi, I'm the ganymede chatbot designed by some fine folks at the hng internship.";
 	$responses["what's up"] = "Hey";
-	$responses["hey"] = "Hey";
+	$responses["hey"] = "Hey, I'm the ganymede chatbot designed by some fine folks at the hng internship.";
 	$responses["good morning"] = "How are you?";
 	$responses["good afternoon"] = "How are you?";
 	$q = $_GET["q"];
@@ -59,7 +59,7 @@
 			
 		}
 	}
-	$noresponse = "Sorry I'm still learning. Rome wasn't built in a day. P.S: I can say jokes, quotes and time";
+	$noresponse = "C'mon buddy, You can't have a general conversation with me yet. I'm just one week old.<br> P.S: I can say jokes, quotes and time";
 	echo $response === "" ? $noresponse : $response;
 ?>
 
