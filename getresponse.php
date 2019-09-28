@@ -48,7 +48,7 @@
 	$responses["good morning "] = "Hi, good morning. How are you?";
 	$responses["good afternoon "] = "Hi, good afternoon. How are you?";
 	$responses["good evening "] = "Hi, good evening. How are you?";
-	$responses["what is hng "] = "You mean what Mark Essien set up to help coders? I'm grateful for it. ";
+	$responses["what is hng "] = "You mean what Mark Essien set up to help coders?<br>It is a 3 month internship program for really outstanding buddies 🙂. I'm grateful for it. ";
 	$responses["are you real "] = "Sure, I've never felt realler 😎 ";
 	$responses["where do you live "] = "I live in GitHub server";
 	$responses["how can you help me "] = "Well, I can keep you company. ☺️";
