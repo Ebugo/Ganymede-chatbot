@@ -40,6 +40,7 @@
 	$responses["how old are you "] = "I am today years old 🙂";
 	$responses["hi "] = "Hi, I'm the ganymede chatbot designed by some fine folks at the hng internship.";
 	$responses["what's up "] = "Hey";
+	$responses["who initiated HNG "] = "Mark Essien";
 	$responses["hey "] = "Hey, I'm the ganymede chatbot designed by some fine folks at the hng internship.";
 	$responses["good morning "] = "How are you?";
 	$responses["good afternoon "] = "How are you?";
