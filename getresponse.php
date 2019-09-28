@@ -33,6 +33,7 @@
 	$responses['what time is it '] = "The time is " . date("h:i:sa");
 	$responses["i'm fine "] = "Good. I'm happy about that.";
 	$responses["fine "] = "Good. I'm happy about that.";
+	$responses["yes, Ok, cool"] = "Alright.";
 	$responses["nice meeting you "] = "Cool. Same here.";
 	$responses["can you say a quote "] = $quote[$random];
 	$responses["can you say a joke "] = $joke[$random1];
@@ -48,14 +49,14 @@
 	$responses["good evening "] = "Hi, good evening. How are you?";
 	$responses["HNG "] = "You mean what Mark Essien set up to help coders? I'm grateful for it. ";
 	$responses["are you real "] = "Sure, I've never felt realler 😎 ";
-	$responses["where do you live "] = "I live in GitHub server, how about you?";
+	$responses["where do you live "] = "I live in GitHub server";
 	$responses["how can you help me "] = "Well, I can keep you company. ☺️";
-	$responses["which languages do you speak "] = "Hmmm... This is a really tough question for me.<br>I was born with Html5, CSS3, JS, and PHP, but I grew up to speak only English! 😊<br> How about you?";
+	$responses["which languages do you speak "] = "Hmmm... This is a really tough question for me.<br>I was born with Html5, CSS3, JS, and PHP, but I grew up to speak only English! 😊";
 	$responses["how are you "] = "I'm good, you?";
 	$responses["are you doing ok "] = "Sure, you?";
 	$responses["are you sure "] = "I'm very sure";
 	$responses["is that your final answer "] = "Yes 🙂";
-	$responses["what are your hobbies "] = "I love meeting people 🙂. What about you?";
+	$responses["what are your hobbies "] = "I love meeting people 🙂.";
 	$responses["what do you look like "] = "Like a bot 🤖☺️";
 
 
