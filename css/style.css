@@ -30,6 +30,7 @@ body{
 	color: white;
 	position: fixed;
 	top: 0;
+	z-index: 1000;
 }
 #header h3 {
 	margin-top: 30px;
