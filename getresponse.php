@@ -57,7 +57,7 @@
 	$responses["are you doing ok "] = "Sure, you?";
 	$responses["are you sure "] = "I'm very sure";
 	$responses["is that your final answer "] = "Yes 🙂";
-	$responses["what are your hobbies "] = "I love meeting people 🙂.";
+	$responses["what are your hobbies "] = "I love meeting people, and making them happy too! 🙂.";
 	$responses["what do you look like "] = "Like a bot 🤖☺️";
 	$responses["lol "] = "I'm funny, didn't I tell you?";
 	$responses["what is the name of this team "] = "Team Ganymede";
