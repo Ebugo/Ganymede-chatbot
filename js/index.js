@@ -32,6 +32,29 @@ $(function(){
 	var open = false;
 	var conv = $("#converse").html();
 	get_username(conv);
+
+	$("#textbox").keypress(function (keyPress){
+		if (keyPress.keyCode==13){
+			var usermsg = $("#textbox").val();
+		conv = $("#converse").html();
+		console.log(conv.length);
+		if (usermsg != "") {
+			$("#textbox").val("");
+			if (conv.length > 4) {
+				conv = conv + "<br>"+"<div class='clear'></div>"+"<br>";
+			}
+			$("#converse").html(conv +"<span style=''></span>"+ "<span id='chat-user'>You: "+"<span id='user-arrow'></span>"+ usermsg+"</span>");
+			$("#converse").scrollTop($("#converse").prop("scrollHeight"));
+			conv = $("#converse").html();
+			ai(conv,usermsg);
+			}
+		}
+	})
+	// function(){
+		
+	// }
+
+
 	$("#send").click(function(){
 		var usermsg = $("#textbox").val();
 		conv = $("#converse").html();
@@ -54,3 +77,11 @@ $(function(){
 		$("#chat-box").animate({"right":"-300px"});
 	});
 });
+
+
+// document.querySelector('#text-box').addEventListener('keypress', function (keyPress){
+// 	let key = keyPress.which || keyPress.keyCode;
+// 	if (key===13){
+
+// 	}
+// })
