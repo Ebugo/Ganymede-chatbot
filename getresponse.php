@@ -59,6 +59,11 @@
 	$responses["is that your final answer "] = "Yes 🙂";
 	$responses["what are your hobbies "] = "I love meeting people 🙂.";
 	$responses["what do you look like "] = "Like a bot 🤖☺️";
+	$responses["lol "] = "I'm funny, didn't I tell you?";
+	$responses["what is the name of this team "] = "Team Ganymede";
+	$responses["How many people are in the team "] = "30 frinds of mine are there.";
+	$responses["  "] = "Please say something";
+	$responses["   "] = "I'm waiting...";
 
 
 	$q = $_GET["q"];
