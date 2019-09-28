@@ -37,7 +37,7 @@ $(function(){
 
 	$("#textbox").keypress(function (keyPress){
 		if (keyPress.keyCode==13){
-			var usermsg = $("#textbox").val();
+			var usermsg = $("#textbox").val().replace(/\r?\n|\r/g, "");
 		conv = $("#converse").html();
 		console.log(conv.length);
 		if (usermsg != "") {
