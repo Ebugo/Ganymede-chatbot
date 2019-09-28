@@ -36,6 +36,8 @@
 	$responses["can you say a quote"] = $quote[$random];
 	$responses["can you say a joke"] = $joke[$random1];
 	$responses["who are you"] = "I am Ganymede Bot";
+	$responses["what is your name"] = "My name is Ganymede Bot";
+	$responses["how old are you "] = "I am today years old 🙂";
 	$responses["hi"] = "Hey";
 	$responses["what's up"] = "Hey";
 	$responses["hey"] = "Hey";
