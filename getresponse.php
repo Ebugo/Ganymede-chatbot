@@ -42,12 +42,13 @@
 	$responses["how old are you "] = "I am today years old 🙂";
 	$responses["hi "] = "Hi, I'm the ganymede chatbot designed by some fine folks at the hng internship.";
 	$responses["what's up "] = "Hey";
-	$responses["who initiated HNG "] = "Mark Essien";
+	$responses["who initiated hng "] = "Mark Essien";
+	$responses["mark essien "] = "Mark Essien, initiator of HNG program. I love him, I wouldn't have been born if it hadn't been for him and some really fine folks on the internship.<br>Those are my buddies 😘";
 	$responses["hey "] = "Hey, I'm the ganymede chatbot designed by some fine folks at the hng internship.";
 	$responses["good morning "] = "Hi, good morning. How are you?";
 	$responses["good afternoon "] = "Hi, good afternoon. How are you?";
 	$responses["good evening "] = "Hi, good evening. How are you?";
-	$responses["HNG "] = "You mean what Mark Essien set up to help coders? I'm grateful for it. ";
+	$responses["hng "] = "You mean what Mark Essien set up to help coders? I'm grateful for it. ";
 	$responses["are you real "] = "Sure, I've never felt realler 😎 ";
 	$responses["where do you live "] = "I live in GitHub server";
 	$responses["how can you help me "] = "Well, I can keep you company. ☺️";
