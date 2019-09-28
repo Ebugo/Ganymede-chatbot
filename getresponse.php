@@ -33,7 +33,7 @@
 	$responses['what time is it '] = "The time is " . date("h:i:sa");
 	$responses["i'm fine "] = "Good. I'm happy about that.";
 	$responses["fine "] = "Good. I'm happy about that.";
-	$responses["yes, Ok, cool"] = "Alright.";
+	$responses["yes Ok cool "] = "Alright.";
 	$responses["nice meeting you "] = "Cool. Same here.";
 	$responses["can you say a quote "] = $quote[$random];
 	$responses["can you say a joke "] = $joke[$random1];
