@@ -67,7 +67,7 @@
 	$responses["i'm good "] = "Good. I'm happy about that.";
 	$responses["i'm cool "] = "Cool. I'm happy about that.";
 	$responses["i am good cool fine ok okay doing well happy great "] = "Good. I'm happy about that.";
-	$responses["i'm not good sad angry cool "] = "Awwwww. I'm sorry about that.";
+	$responses["i'm not good" ||"I'm not cool "] = "Awwwww. I'm sorry about that.";
 
 
 	$q = $_GET["q"];
