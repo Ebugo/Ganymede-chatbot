@@ -61,6 +61,9 @@
 	$responses["what do you look like "] = "Like a bot 🤖☺️";
 	$responses["lol "] = "I'm funny, didn't I tell you?";
 	$responses["what is the name of this team "] = "Team Ganymede";
+	$responses["what team is this "] = "Team Ganymede";
+	$responses["which team is this "] = "Team Ganymede";
+	$responses["how are you "] = "I'm cool, you? ";
 	$responses["How many people are in the team "] = "30 frinds of mine are there.";
 	$responses["  "] = "Please say something";
 	$responses["   "] = "I'm waiting...";
