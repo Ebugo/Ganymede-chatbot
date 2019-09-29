@@ -64,6 +64,10 @@
 	$responses["How many people are in the team "] = "30 frinds of mine are there.";
 	$responses["  "] = "Please say something";
 	$responses["   "] = "I'm waiting...";
+	$responses["i'm good "] = "Good. I'm happy about that.";
+	$responses["i'm cool "] = "Cool. I'm happy about that.";
+	$responses["i am good cool fine ok okay doing well happy great "] = "Good. I'm happy about that.";
+	$responses["i'm not good sad angry cool "] = "Awwwww. I'm sorry about that.";
 
 
 	$q = $_GET["q"];
